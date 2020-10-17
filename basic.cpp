@@ -12,13 +12,14 @@ using namespace std; // you don't have to type out "std" each time
 int main() {
 
     int num; 
-    cin >> num; // input
-    cout << "Hello World!\n"; // output
+    //cin >> num; // input
+    //cout << "Hello World!\n"; // output
 
     int n = 3, m = 5;
     cout << n << " " << m << "\n"; // print two variables separated by space
-    m1 = max(n, m) // maximum
-    m2 = min(n, m) // minimum
+
+    // int m1 = max(n, m); // maximum
+    // int m2 = min(n, m); // minimum
 
     ll big_number; // define a long long using our shortcut
 
@@ -27,18 +28,25 @@ int main() {
     for(int i = 0; i < iter; i++){
         cout << i;
     }
-
+    cout << "\n";
     // loop trough characters in string
     string s1 = "ADBCDADB";
     for (char d : s1){
         cout << d;
     }
-
-    // CONDITIONAL STATEMENTS
-    // 
+    cout << "\n";
     // and = &&, if = ||, not = !    
 
 
+
+    // ARRAYS AND VECTORS
+
+    // vector 
+    vector<int> v;
+    v.push_back(3); // add elements
+    v.push_back(4);
+    cout << v.size(); // size of vector
+    
 
     return 0; // end of program
 }
