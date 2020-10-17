@@ -17,15 +17,28 @@ int main() {
 
     int n = 3, m = 5;
     cout << n << " " << m << "\n"; // print two variables separated by space
+    m1 = max(n, m) // maximum
+    m2 = min(n, m) // minimum
 
     ll big_number; // define a long long using our shortcut
 
+    // for loop
+    int iter = 10;
+    for(int i = 0; i < iter; i++){
+        cout << i;
+    }
 
     // loop trough characters in string
     string s1 = "ADBCDADB";
     for (char d : s1){
         cout << d;
     }
+
+    // CONDITIONAL STATEMENTS
+    // 
+    // and = &&, if = ||, not = !    
+
+
 
     return 0; // end of program
 }
