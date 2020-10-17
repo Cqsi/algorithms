@@ -2,20 +2,30 @@
 
 using namespace std; // you don't have to type out "std" each time
 
-// libraries to inlcude
-#include <iostream> // input and output
-#include <algorithm> // a ton of useful algorithms
+// include all standard libraries
+// useful in competitive programming, not in software engineering
+#include <bits/stdc++.h>
 
 #define ll long long // just type "ll" instead of "long long"
 #define ar array // ar instead of array
 
 int main() {
+
     int num; 
-
     cin >> num; // input
-    cout << "Hello World!"; // output
+    cout << "Hello World!\n"; // output
+
+    int n = 3, m = 5;
+    cout << n << " " << m << "\n"; // print two variables separated by space
+
+    ll big_number; // define a long long using our shortcut
 
 
+    // loop trough characters in string
+    string s1 = "ADBCDADB";
+    for (char d : s1){
+        cout << d;
+    }
 
     return 0; // end of program
 }
