@@ -1,0 +1,1 @@
+Collection of algorithms that I use in competitive programming. Mainly math, string algorithms, graphs and trees.
