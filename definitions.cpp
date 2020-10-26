@@ -9,16 +9,9 @@
 
 #define gcd(a,b) __gcd(a,b)
 
-template<class T> inline vector<pair<T,int> > factorize(T n)//NOTES:factorize(
-  {vector<pair<T,int> > R;for (T i=2;n>1;){if (n%i==0){int C=0;for (;n%i==0;C++,n/=i);R.push_back(make_pair(i,C));}
-   i++;if (i>n/i) i=n;}if (n>1) R.push_back(make_pair(n,1));return R;}
-
-template<class T> inline vector<T> primefactor(T n){
-    vector<T> factors;
-    while(n%2==0){
-        factors.push_back
-    }
-}
+// MATH
+// divisors of number
+template<class T> inline vector<T> divisors(T n){ vector<T> divs; for (int i = 1; i*i < n; i++) { if (n % i == 0){ divs.push_back(i); } } for (int i = sqrt(n); i >= 1; i--) { if (n % i == 0){ divs.push_back(n/i); } } return divs;}
 
 // CONSTANTS
 const double PI=acos(-1.0);
