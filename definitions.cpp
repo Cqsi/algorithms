@@ -11,7 +11,10 @@
 
 // MATH
 // divisors of number
-template<class T> inline vector<T> divisors(T n){ vector<T> divs; for (int i = 1; i*i < n; i++) { if (n % i == 0){ divs.push_back(i); } } for (int i = sqrt(n); i >= 1; i--) { if (n % i == 0){ divs.push_back(n/i); } } return divs;}
+template<class T> inline vector<T> divisors(T n){ vector<T> divs; for (T i = 1; i*i < n; i++) { if (n % i == 0){ divs.push_back(i); } } for (T i = sqrt(n); i >= 1; i--) { if (n % i == 0){ divs.push_back(n/i); } } return divs;}
+
+// primality test
+template<class T> inline string isPrime(T n){ T s = ceil(sqrt(n)); bool prime = true; for(T i = 2; i < s+1; i+=2){ if(n%i == 0){ prime = false; break; } if(i==2){ i--; } }return prime ? "true" : "false"; } 
 
 // CONSTANTS
 const double PI=acos(-1.0);
