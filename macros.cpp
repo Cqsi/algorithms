@@ -9,6 +9,9 @@
 
 #define gcd(a,b) __gcd(a,b)
 
+// STRINGS
+template<class T> inline T returnStringVal(char x){return (T)x - 96;}
+
 // MATH
 // divisors of number
 template<class T> inline vector<T> divisors(T n){ vector<T> divs; for (T i = 1; i*i < n; i++) { if (n % i == 0){ divs.push_back(i); } } for (T i = sqrt(n); i >= 1; i--) { if (n % i == 0){ divs.push_back(n/i); } } return divs;}
