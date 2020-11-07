@@ -7,7 +7,8 @@
 #define seti(v) set<int> uniques(v.begin(), v.end())
 #define printv(v) for(auto i : v){cout << i;}
 
-#define gcd(a,b) __gcd(a,b)
+#define print_
+
 
 // STRINGS
 template<class T> inline T returnStringVal(char x){return (T)x - 96;}
@@ -21,3 +22,4 @@ template<class T> inline string isPrime(T n){ T s = ceil(sqrt(n)); bool prime = 
 
 // CONSTANTS
 const double PI=acos(-1.0);
+#define gcd(a,b) __gcd(a,b)
